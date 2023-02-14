@@ -1,35 +1,46 @@
-import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Sidebar = ()=>{
-  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+    const isMenuOpen = useSelector((store)=> store.app.isMenuOpen);
 
-  // Early Return pattern
-  if (!isMenuOpen) return null
+      // Early Return pattern
+     if (!isMenuOpen) return null;
+
     return (
-        <div className="sidebar h-96 w-44 shadow-lg">
-             <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li> Shorts</li>
-        <li> Videos</li>
-        <li> Live</li>
-      </ul>
-      <h1 className="font-bold pt-5">Subscriptions</h1>
-      <ul>
-        <li> Music</li>
-        <li> Sports</li>
-        <li> Gaming</li>
-        <li> Movies</li>
-      </ul>
-      <h1 className="font-bold pt-5">Watch Later</h1>
-      <ul>
-        <li> Music</li>
-        <li> Sports</li>
-        <li> Gaming</li>
-        <li> Movies</li>
-      </ul>
+        <div className="w-48">
+            <div className="lists">
+                <ul className="py-3">
+                    <li className="py-1">Home</li>
+                    <li className="py-1">Shorts</li>
+                    <li className="py-1">Subscription</li>
+                </ul>
+                <hr />
+                <ul className="py-3">
+                    <li className="py-1">Library</li>
+                    <li className="py-1">History</li>
+                    <li className="py-1">Your videos</li>
+                    <li className="py-1">Watch Later</li>
+                    <li className="py-1">Liked videos</li>
+                </ul>
+                <hr />
+                <ul className="py-3">
+                    <li className="py-1">Ashish</li>
+                    <li className="py-1">Ashish</li>
+                    <li className="py-1">Ashish</li>
+                    <li className="py-1">Ashish</li>
+                    <li className="py-1">Ashish</li>
+                    <li className="py-1">Ashish</li>
+                    <li className="py-1">Ashish</li>
+                    <li className="py-1">Ashish</li>
+                     <li className="py-1">Ashish</li>
+                     <li className="py-1">Ashish</li>
+                     <li className="py-1">Ashish</li>
+                     <li className="py-1">Ashish</li>
+                     <li className="py-1">Ashish</li>
+                     <li className="py-1">Ashish</li>
+                     <li className="py-1">Ashish</li>
+                </ul>
+            </div>
         </div>
     )
 }

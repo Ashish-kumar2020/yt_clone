@@ -1,6 +1,8 @@
 const WatchPage = ()=>{
     return (
-        <h1>WatchPage</h1>
+        <div>
+            <h1>WatchPage</h1>
+        </div>
     )
 }
 
